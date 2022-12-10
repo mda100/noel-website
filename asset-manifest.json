@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/noel-website/static/css/main.8248ef5f.css",
+    "main.js": "/noel-website/static/js/main.f189296f.js",
+    "static/js/787.79ee4126.chunk.js": "/noel-website/static/js/787.79ee4126.chunk.js",
+    "static/media/IMG_0645.MOV": "/noel-website/static/media/IMG_0645.c5f319ded91faafce030.MOV",
+    "static/media/IMG_4823.jpg": "/noel-website/static/media/IMG_4823.41314068438e0f919c93.jpg",
+    "static/media/IMG_3539.jpg": "/noel-website/static/media/IMG_3539.d4fcbabfefafa8954958.jpg",
+    "static/media/IMG_6564.jpg": "/noel-website/static/media/IMG_6564.7b75d5e0d431e5f7501a.jpg",
+    "static/media/IMG_3554.jpg": "/noel-website/static/media/IMG_3554.48d0edfbdb7ac2e5b27f.jpg",
+    "static/media/IMG_0621.jpg": "/noel-website/static/media/IMG_0621.1197bf38aad4b3dc6a6a.jpg",
+    "static/media/IMG_4010.jpg": "/noel-website/static/media/IMG_4010.8f11839f90fc094cbcf6.jpg",
+    "static/media/IMG_3480.jpg": "/noel-website/static/media/IMG_3480.6c189ce54a77a72b9a3d.jpg",
+    "static/media/IMG_3114.JPG": "/noel-website/static/media/IMG_3114.4146a4f2ce29a04cdecd.JPG",
+    "static/media/slick.svg": "/noel-website/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/noel-website/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/noel-website/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/noel-website/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/noel-website/index.html",
+    "main.8248ef5f.css.map": "/noel-website/static/css/main.8248ef5f.css.map",
+    "main.f189296f.js.map": "/noel-website/static/js/main.f189296f.js.map",
+    "787.79ee4126.chunk.js.map": "/noel-website/static/js/787.79ee4126.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8248ef5f.css",
+    "static/js/main.f189296f.js"
+  ]
+}
