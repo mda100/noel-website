@@ -1,0 +1,11 @@
+# .github/workflows/deploy.yml
+name: deploy
+on:
+  push:
+    branches: [ main ]
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - run: yarn install
+      - run: yarn deploy
