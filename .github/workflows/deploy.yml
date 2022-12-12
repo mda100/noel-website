@@ -9,5 +9,6 @@ jobs:
     steps:
       - run: |
           cd ..
+          ls
           yarn install
           yarn deploy
