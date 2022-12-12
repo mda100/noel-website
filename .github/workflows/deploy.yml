@@ -7,4 +7,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - run: yarn deploy
+      - run: |
+          cd ..
+          yarn install
+          yarn deploy
