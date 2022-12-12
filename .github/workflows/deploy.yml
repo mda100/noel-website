@@ -7,10 +7,13 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: |
-          actions/checkout@v2
-          actions/setup-node@v1
-      - run: |
-          cd ..
+      - name: Checkout Code
+        uses: actions/checkout@v2
+      - name: Install Node.js, NPM and Yarn
+        uses: actions/setup-node@v1
+        with:
+            node-version: 16
+      - name: Deploy
+        run: |
           yarn install
           yarn deploy
