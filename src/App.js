@@ -1,13 +1,12 @@
 import './App.css';
 import Carousel from './components/Carousel/Carousel';
-import imageData from './assets/imageData';
+import imageData from './assets/imageData.json';
 
 function App() {
   return (
     <div className="App">
       {/* header */}
-      <div> TEST </div>
-      <Carousel images={imageData}/>
+      <Carousel images={imageData.data}/>
       {/* footer */}
     </div>
   );

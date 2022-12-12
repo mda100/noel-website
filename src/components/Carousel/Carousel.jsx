@@ -24,11 +24,11 @@ const Carousel = ({ images }) => {
   return (
     <div className={styles.outer_wrapper}>
       <Slider {...settings}>
-        {images?.map((image, i) => {
+        {images?.map((image) => {
           console.log(image.image)
           return (
-            <div key={i} className={styles.inner_wrappers}>
-              <img className={styles.img} src={require(`../../assets/${image.image}`)} alt=""/>
+            <div key={image.key} className={styles.inner_wrappers}>
+              <img className={styles.img} src={require(`../../assets/images/${image.image}`)} alt=""/>
             </div>
           );
         })}
