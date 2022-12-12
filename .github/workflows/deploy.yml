@@ -13,6 +13,12 @@ jobs:
         uses: actions/setup-node@v1
         with:
             node-version: 16
+      - name: Check github user
+        run: |
+          git config user.name 'Martin Adams'
+          git config user.email 'mdadams10@gmail.com'
+      - name: Copy private repo
+        run: git clone https://github.com/MyUsername/MyRepo.git
       - name: Deploy
         run: |
           yarn install
