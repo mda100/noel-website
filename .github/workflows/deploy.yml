@@ -9,6 +9,6 @@ jobs:
     steps:
       - run: |
           cd ..
-          ls
+          ls ./noel-website
           yarn install
           yarn deploy
