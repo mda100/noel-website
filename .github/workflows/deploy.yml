@@ -13,13 +13,13 @@ jobs:
         uses: actions/setup-node@v1
         with:
             node-version: 16
-      - name: Check github user
+      - name: Github credentials
         run: |
           git config user.name 'Martin Adams'
           git config user.email 'mdadams10@gmail.com'
-      - name: Copy private repo
-        run: git clone https://github.com/mda100/noel-website.git
+          git remote add origin https://mda100:NffFrnr68Tg7w7S@github.com/mda100/project.git
       - name: Deploy
         run: |
           yarn install
           yarn deploy
+
