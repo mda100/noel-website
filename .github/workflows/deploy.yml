@@ -18,7 +18,7 @@ jobs:
           git config user.name 'Martin Adams'
           git config user.email 'mdadams10@gmail.com'
       - name: Copy private repo
-        run: git clone https://github.com/MyUsername/MyRepo.git
+        run: git clone https://github.com/mda100/noel-website.git
       - name: Deploy
         run: |
           yarn install
