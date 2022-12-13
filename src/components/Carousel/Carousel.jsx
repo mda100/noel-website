@@ -20,6 +20,8 @@ const Carousel = ({ images }) => {
     lazyLoading: 'progress',
     pauseOnFocus: false,
     pauseOnHover: false,
+    variableWidth: false,
+    className: styles.inner_slider
   };
   return (
     <div className={styles.outer_wrapper}>
@@ -27,8 +29,8 @@ const Carousel = ({ images }) => {
         {images?.map((image) => {
           console.log(image.image)
           return (
-            <div key={image.key} className={styles.inner_wrappers}>
-              <img className={styles.img} src={require(`../../assets/images/${image.image}`)} alt=""/>
+            <div className={styles.inner_wrapper}>
+              <img key={image.key} className={styles.img} src={require(`../../assets/images/${image.image}`)} alt=""/>
             </div>
           );
         })}
