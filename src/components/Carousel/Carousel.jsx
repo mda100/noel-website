@@ -5,8 +5,6 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import styles from './Carousel.module.css';
 
-/* documentation for setting props */
-
 const Carousel = ({ images }) => {
   const settings = {
     dots: false,
@@ -17,7 +15,7 @@ const Carousel = ({ images }) => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    lazyLoading: 'progress',
+    lazyLoading: 'progressive',
     pauseOnFocus: false,
     pauseOnHover: false,
     variableWidth: false,
