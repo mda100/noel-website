@@ -17,7 +17,7 @@ const ImgBlock = ({ image }) => {
       muted={true}
       playsInline={true}
       className={styles.img}
-      src={require(`../../assets/images/${image.image}`)}
+      src={require(`../../assets/images/compressed/${image.image}`)}
       alt=""
       preload="auto"
      />
@@ -25,7 +25,7 @@ const ImgBlock = ({ image }) => {
   } else {
     block = <img 
       className={styles.img}
-      src={require(`../../assets/images/${image.image}`)}
+      src={require(`../../assets/images/compressed/${image.image}`)}
       alt=""
     />
   }
