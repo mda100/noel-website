@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/noel-website/static/css/main.298af1e9.css",
-    "main.js": "/noel-website/static/js/main.2d084425.js",
+    "main.js": "/noel-website/static/js/main.5088a625.js",
     "static/js/787.79ee4126.chunk.js": "/noel-website/static/js/787.79ee4126.chunk.js",
     "static/media/9.MOV": "/noel-website/static/media/9.9ac5716b0d603a5cbcfd.MOV",
     "static/media/9.mp4": "/noel-website/static/media/9.03fc8cefdd3763331650.mp4",
@@ -19,11 +19,11 @@
     "static/media/slick.woff": "/noel-website/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/noel-website/index.html",
     "main.298af1e9.css.map": "/noel-website/static/css/main.298af1e9.css.map",
-    "main.2d084425.js.map": "/noel-website/static/js/main.2d084425.js.map",
+    "main.5088a625.js.map": "/noel-website/static/js/main.5088a625.js.map",
     "787.79ee4126.chunk.js.map": "/noel-website/static/js/787.79ee4126.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.298af1e9.css",
-    "static/js/main.2d084425.js"
+    "static/js/main.5088a625.js"
   ]
 }
