@@ -56,10 +56,7 @@ const Carousel = ({ images }) => {
       <Slider {...settings}>
         {images?.map((image) => {
           return (
-            <div 
-              key={image.key}
-              className={styles.inner_wrapper}
-            >
+            <div key={image.key} className={styles.inner_wrapper} >
               <ImgBlock image={image} />
             </div>
           );
