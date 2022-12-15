@@ -19,7 +19,7 @@ const ImgBlock = ({ image }) => {
       className={styles.img}
       src={require(`../../assets/images/${image.image}`)}
       alt=""
-      preload={"auto"}
+      preload="auto"
      />
 
   } else {
