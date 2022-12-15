@@ -7,9 +7,10 @@ const IMAGES_PATH = DIR + "/src/assets/images/"
 const IMAGE_OBJ_PATH = DIR + "/src/assets/imageData.json"
 
 const ImageMetaData = class {
-  constructor(key, image) {
+  constructor(key, image, isVideo) {
     this.key = key;
     this.image = image;
+    this.isVideo = isVideo;
     // this.description = description; //TODO: add other metadata for images
   }
 };
@@ -17,8 +18,12 @@ const ImageMetaData = class {
 const imageObjectBuilder = () => {
   const imageDataArray = []
   const isHidden = (file) => (/(^|\/)\.[^\/\.]/g).test(file); 
+  const isVideo = (file) => (/\.mp4|\.m4v|\.mov|\.avi|\.mkv|\.wmv$/i).test(file); 
   fs.readdirSync(IMAGES_PATH).forEach((file, i) => {
-    if (!isHidden(file)) imageDataArray.push(new ImageMetaData(i,file));
+    if (!isHidden(file)) {
+      let vFlag = isVideo(file);
+      imageDataArray.push(new ImageMetaData(i,file,vFlag));
+    }
   })
   return JSON.stringify({data: imageDataArray});
 }
