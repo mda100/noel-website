@@ -30,14 +30,14 @@ const ImageMetaData = class {
 };
 
 const compressFile = (file) => {
-  sharp(file)
+  sharp(`${IMAGES_SOURCE_PATH}/${file}`)
    .resize(COMPRESSION_CONFIG.width, COMPRESSION_CONFIG.height, { fit: COMPRESSION_CONFIG.fit})
    .toFormat(COMPRESSION_CONFIG.format)
    .jpeg({
     quality: COMPRESSION_CONFIG.quality,
     progressive: COMPRESSION_CONFIG.progressive
   })
-  .toFile(`${IMAGES_COMPRESSED_PATH}+${file}`);
+  .toFile(`${IMAGES_COMPRESSED_PATH}/${file}`);
 };
 
 const compressImages = () => {
@@ -48,7 +48,11 @@ const compressImages = () => {
   for (file of sourceArray) {
     if(!isAlreadyCompressed(file)){
       if(isVideo(file)){
-        fs.copyFile(`${IMAGES_SOURCE_PATH}+${file}`, `${IMAGES_COMPRESSED_PATH}+${file}`);
+        fs.copyFile(`${IMAGES_SOURCE_PATH}/${file}`, `${IMAGES_COMPRESSED_PATH}/${file}`, (err) => {
+          if (err) {
+            console.log("Error Found:", err);
+          }
+        })
       } else {
         compressFile(file);
       }
