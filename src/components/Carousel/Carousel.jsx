@@ -9,14 +9,17 @@ const ImgBlock = ({ image }) => {
   let block;
   if(image.isVideo){
     block = <video 
-      autoplay=""
-      loop=""
+      width="100%"
+      autoplay="autoplay"
+      loop="true"
       muted="true"
-      playsinline=""
+      playsinline="true"
       className={styles.img}
       src={require(`../../assets/images/${image.image}`)}
       alt=""
+      preload="auto"
      />
+
   } else {
     block = <img 
       key={image.key}
