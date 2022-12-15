@@ -5,24 +5,28 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import styles from './Carousel.module.css';
 
+
+
+
 const ImgBlock = ({ image }) => {
+  let isSafari = !(navigator.userAgent.indexOf('Chrome') > -1) && (navigator.userAgent.indexOf("Safari") > -1);
   let block;
-  if(image.isVideo){
+  if(image.isVideo && !isSafari){
     block = <video 
-      width="100%"
-      autoplay="autoplay"
-      loop="true"
-      muted="true"
-      playsinline="true"
+      max-width="100%"
+      max-height="100%"
+      autoPlay={true}
+      loop={true}
+      muted={true}
+      playsInline={true}
       className={styles.img}
       src={require(`../../assets/images/${image.image}`)}
       alt=""
-      preload="auto"
+      preload={"auto"}
      />
 
   } else {
     block = <img 
-      key={image.key}
       className={styles.img}
       src={require(`../../assets/images/${image.image}`)}
       alt=""
@@ -52,7 +56,10 @@ const Carousel = ({ images }) => {
       <Slider {...settings}>
         {images?.map((image) => {
           return (
-            <div className={styles.inner_wrapper}>
+            <div 
+              key={image.key}
+              className={styles.inner_wrapper}
+            >
               <ImgBlock image={image} />
             </div>
           );
