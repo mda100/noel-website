@@ -5,6 +5,29 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import styles from './Carousel.module.css';
 
+const ImgBlock = ({ image }) => {
+  let block;
+  if(image.isVideo){
+    block = <video 
+      autoplay=""
+      loop=""
+      muted="true"
+      playsinline=""
+      className={styles.img}
+      src={require(`../../assets/images/${image.image}`)}
+      alt=""
+     />
+  } else {
+    block = <img 
+      key={image.key}
+      className={styles.img}
+      src={require(`../../assets/images/${image.image}`)}
+      alt=""
+    />
+  }
+  return block;
+}
+
 const Carousel = ({ images }) => {
   const settings = {
     dots: false,
@@ -25,10 +48,9 @@ const Carousel = ({ images }) => {
     <div className={styles.outer_wrapper}>
       <Slider {...settings}>
         {images?.map((image) => {
-          console.log(image.image)
           return (
             <div className={styles.inner_wrapper}>
-              <img key={image.key} className={styles.img} src={require(`../../assets/images/${image.image}`)} alt=""/>
+              <ImgBlock image={image} />
             </div>
           );
         })}
