@@ -41,9 +41,9 @@ const compressFile = (file) => {
 };
 
 const compressImages = () => {
-  const isAlreadyCompressed = (file) => compressedArray.includes(file);
   const compressedArray = fs.readdirSync(IMAGES_COMPRESSED_PATH);
   const sourceArray = fs.readdirSync(IMAGES_SOURCE_PATH);
+  const isAlreadyCompressed = (file) => compressedArray.includes(file);
   let file;
   for (file of sourceArray) {
     if(!isAlreadyCompressed(file)){
