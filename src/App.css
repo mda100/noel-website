@@ -15,3 +15,11 @@
 .slick-list {
   height: 100% !important;
 }
+
+@media screen and (max-width: 700px) {
+  .slick-dots li {
+    width: .5rem !important;
+    height: .5rem !important;
+    margin: 0 .125rem !important;
+  }
+}
