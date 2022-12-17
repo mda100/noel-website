@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/noel-website/static/css/main.daac73c4.css",
-    "main.js": "/noel-website/static/js/main.778e5e41.js",
+    "main.css": "/noel-website/static/css/main.68733d04.css",
+    "main.js": "/noel-website/static/js/main.991cec4a.js",
     "static/js/787.79ee4126.chunk.js": "/noel-website/static/js/787.79ee4126.chunk.js",
     "static/media/IMG_0645.MOV": "/noel-website/static/media/IMG_0645.c5f319ded91faafce030.MOV",
     "static/media/IMG_4823.jpg": "/noel-website/static/media/IMG_4823.bf50f20084b9542ed65d.jpg",
@@ -17,12 +17,12 @@
     "static/media/slick.ttf": "/noel-website/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/noel-website/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/noel-website/index.html",
-    "main.daac73c4.css.map": "/noel-website/static/css/main.daac73c4.css.map",
-    "main.778e5e41.js.map": "/noel-website/static/js/main.778e5e41.js.map",
+    "main.68733d04.css.map": "/noel-website/static/css/main.68733d04.css.map",
+    "main.991cec4a.js.map": "/noel-website/static/js/main.991cec4a.js.map",
     "787.79ee4126.chunk.js.map": "/noel-website/static/js/787.79ee4126.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.daac73c4.css",
-    "static/js/main.778e5e41.js"
+    "static/css/main.68733d04.css",
+    "static/js/main.991cec4a.js"
   ]
 }
