@@ -10,7 +10,7 @@
 .text {
   font-family: 'Fredoka One', cursive;
   font-size: 2.5rem;
-  color: rgb(176, 106, 241);
+  color: var(--dark-purple);
   text-align: center;
 }
 
