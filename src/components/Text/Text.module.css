@@ -1,0 +1,17 @@
+.text-container {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-items: center;
+  width: 100%;
+  height: 10%;
+  margin: 1rem 0;
+}
+
+.text {
+  font-family: 'Fredoka One', cursive;
+  font-size: 2rem;
+  color: rgb(176, 106, 241);
+  text-align: center;
+}
+
