@@ -34,7 +34,7 @@ const ImgBlock = ({ image }) => {
 
 const Carousel = ({ images }) => {
   const settings = {
-    dots: true,
+    dots: false,
     arrows: true,
     infinite: true,
     autoplay: true,
