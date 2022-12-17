@@ -1,9 +1,16 @@
+:root {
+  --dark-purple: rgb(176, 106, 241);
+  --light-purple: rgb(243, 238, 245);
+  --dark-grey: rgb(60, 60, 60);
+}
+
 .App {
-  background-color: rgb(243, 238, 245);
+  background-color: var(--light-purple);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  padding-top: 5%;
   width: 100vw;
   height: 100vh;
 }
@@ -14,4 +21,21 @@
 
 .slick-list {
   height: 100% !important;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: var(--dark-grey) !important;
+}
+
+@media screen and (max-width: 700px) {
+  .App {
+    padding-top: 15%;
+  }
+
+  .slick-dots li {
+    width: .5rem !important;
+    height: .5rem !important;
+    margin: 0 .125rem !important;
+  }
 }

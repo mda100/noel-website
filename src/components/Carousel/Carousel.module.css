@@ -1,7 +1,8 @@
 .outer_wrapper {
   /* border: 1px red solid; */
-  width: 80%;
-  height: 80%;
+  width: 60%;
+  height: 60%;
+  margin: 1.5rem 0 2rem 0;
 }
 
 .inner_slider {
@@ -28,4 +29,12 @@ div:has(> .inner_wrapper){
   border-radius: 2rem;
   max-width: 100%;
   max-height: 100%;
+}
+
+@media screen and (max-width: 700px) {
+  .outer_wrapper {
+    margin: 0 0 3rem 0;
+    height: 45%;
+    width: 70%;
+  }  
 }
